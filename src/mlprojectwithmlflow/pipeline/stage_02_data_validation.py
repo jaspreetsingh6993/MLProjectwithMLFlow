@@ -18,8 +18,8 @@ class DataValidationTrainingPipeline:
 if __name__ == "__main__":
     try:
         logger.info(f">>>>>>>>>> Stage {STAGE_NAME} Started <<<<<<<<<<")
-        obj = DataValidationTrainingPipeline()
-        obj.main()
+        data_validation_obj = DataValidationTrainingPipeline()
+        data_validation_obj.main()
         logger.info(f">>>>>>>>>> Stage {STAGE_NAME} Completed <<<<<<<<<<")
     except Exception as e:
         logger.exception(e)

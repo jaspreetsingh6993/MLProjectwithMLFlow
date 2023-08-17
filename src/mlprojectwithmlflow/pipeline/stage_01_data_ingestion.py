@@ -20,8 +20,8 @@ class DataIngestionTrainingPipeline:
 if __name__== '__main__':
     try:
         logger.info(f">>>>>>>>>> Stage {STAGE_NAME} Started <<<<<<<<<<")
-        obj=DataIngestionTrainingPipeline()
-        obj.main()
+        data_ingestion_obj=DataIngestionTrainingPipeline()
+        data_ingestion_obj.main()
         logger.info(f">>>>>>>>>> Stage {STAGE_NAME} Completed <<<<<<<<<<")
     except Exception as e:
         logger.exception(e)

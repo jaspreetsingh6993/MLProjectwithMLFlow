@@ -29,8 +29,8 @@ class DataTransformationTrainingPipeline:
 if __name__ == "__main__":
     try:
         logger.info(f">>>>>>>>>> Stage {STAGE_NAME} Started <<<<<<<<<<")
-        obj = DataTransformationTrainingPipeline()
-        obj.main()
+        data_transformation_obj = DataTransformationTrainingPipeline()
+        data_transformation_obj.main()
         logger.info(f">>>>>>>>>> Stage {STAGE_NAME} Completed <<<<<<<<<<")
     except Exception as e:
         logger.exception(e)

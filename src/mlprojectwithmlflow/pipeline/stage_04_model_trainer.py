@@ -18,8 +18,8 @@ class ModelTrainerTrainingPipeline:
 if __name__=="__main__":
     try:
         logger.info(f">>>>>>>>>> stage {STAGE_NAME} started <<<<<<<<<<")
-        obj=ModelTrainerTrainingPipeline()
-        obj.main()
+        model_trainer_obj=ModelTrainerTrainingPipeline()
+        model_trainer_obj.main()
         logger.info(f">>>>>>>>>> stage {STAGE_NAME} completed <<<<<<<<<<")
     except Exception as e:
         logger.exception(e)
